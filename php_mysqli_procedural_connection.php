@@ -13,5 +13,7 @@
 	{
 		echo "connected successfully";
 	}
+
+        //close connection
 	mysqli_close($conn);
 ?>
