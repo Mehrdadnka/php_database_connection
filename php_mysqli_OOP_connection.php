@@ -2,7 +2,6 @@
 	include('config.php');
 	
 	//create connection
-	
 	$conn = new mysqli($servername,$username,$password);
 	
 	//check connection
@@ -14,6 +13,8 @@
 	else
 	{
 		echo "Connected successfully";
-	}	
+	}
+
+        //close connection 	
 	$conn->close();	
 ?>
