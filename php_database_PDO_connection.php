@@ -1,7 +1,7 @@
 <?php
 	include('config.php');
 	
-	//create connection
+	//create connection with mysql database 
 	try
 	{
 		$conn = new PDO("mysql:host=$servername;dbname=mydb",$username,$password);
@@ -15,5 +15,7 @@
 	{
 		echo "Connection failed: ".$e->getMessage();
 	}
+
+        //close connection 
 	$conn = null;	
 ?>
