@@ -4,6 +4,7 @@
 	//create connection with mysql database 
 	try
 	{
+                //creating a new php data object(PDO)
 		$conn = new PDO("mysql:host=$servername;dbname=mydb",$username,$password);
 	
 		//set the PDO error mode to exception
