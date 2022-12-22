@@ -1,7 +1,7 @@
 <?php
 	include('config.php');
 	
-	//create connection with mysql database 
+	//check connection with mysql database 
 	try
 	{
                 //creating a new php data object(PDO)
@@ -12,7 +12,7 @@
 
 		echo "Connected successfully";
 	}
-	catch(PDOException $e)
+	catch(PDOException $e) //exception error mode
 	{
 		echo "Connection failed: ".$e->getMessage();
 	}
