@@ -19,4 +19,3 @@
 
         //close connection 
 	$conn = null;	
-?>
